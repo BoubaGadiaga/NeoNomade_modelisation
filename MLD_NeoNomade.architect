@@ -77,36 +77,42 @@
     <column id="COL18" populated="true" UUID="4c5525f8-0489-4967-b828-ab9341d13a86" autoIncrement="false" autoIncrementSequenceName="oeuvre_titre_seq" defaultValue="" name="titre" nullable="1" physicalName="titre" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
+    <column id="COL19" populated="true" UUID="49e77424-192b-48ea-a1f4-86b4d1a014a7" autoIncrement="false" autoIncrementSequenceName="societe_de_production_societe_prod_seq" defaultValue="" name="societe_prod" nullable="0" physicalName="societe_prod" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
     </folder>
     <folder id="FOLTAB173" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
     <folder id="FOLTAB172" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB174" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX19" populated="true" UUID="13f385b1-f22e-40e3-98ca-84b210c6047a" clustered="false" name="oeuvre_pk" physicalName="oeuvre_pk" primaryKeyIndex="true" unique="false" >
+    <index id="IDX20" populated="true" UUID="13f385b1-f22e-40e3-98ca-84b210c6047a" clustered="false" name="oeuvre_pk" physicalName="oeuvre_pk" primaryKeyIndex="true" unique="false" >
     </index>
    </folder>
   </table>
-  <table id="TAB20" populated="true" UUID="164ba752-9a9d-474b-91d1-237532641809" name="tournage" objectType="TABLE" physicalName="tournage" >
+  <table id="TAB21" populated="true" UUID="164ba752-9a9d-474b-91d1-237532641809" name="tournage" objectType="TABLE" physicalName="tournage" >
    <remarks></remarks>
-   <folder id="FOLTAB201" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL21" populated="true" UUID="0d724d0b-1e46-45e7-960b-5ad3f7afb113" autoIncrement="false" autoIncrementSequenceName="tournage_date_de_debut_seq" defaultValue="" name="date_de_debut" nullable="1" physicalName="date_de_debut" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+   <folder id="FOLTAB211" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL22" populated="true" UUID="0d724d0b-1e46-45e7-960b-5ad3f7afb113" autoIncrement="false" autoIncrementSequenceName="tournage_date_de_debut_seq" defaultValue="" name="date_de_debut" nullable="1" physicalName="date_de_debut" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks></remarks>
     </column>
-    <column id="COL22" populated="true" UUID="ebc7a208-f790-4fe6-a0cd-61912a9c7f1b" autoIncrement="false" autoIncrementSequenceName="tournage_date_de_fin_seq" defaultValue="" name="date_de_fin" nullable="1" physicalName="date_de_fin" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+    <column id="COL23" populated="true" UUID="ebc7a208-f790-4fe6-a0cd-61912a9c7f1b" autoIncrement="false" autoIncrementSequenceName="tournage_date_de_fin_seq" defaultValue="" name="date_de_fin" nullable="1" physicalName="date_de_fin" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB203" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB213" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB202" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB212" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB204" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX23" populated="true" UUID="9ff92888-5f06-45a2-ad04-11c0a5d48451" clustered="false" name="tournage_pk" physicalName="oeuvre_pk" primaryKeyIndex="true" unique="false" >
+    <folder id="FOLTAB214" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX24" populated="true" UUID="9ff92888-5f06-45a2-ad04-11c0a5d48451" clustered="false" name="tournage_pk" physicalName="oeuvre_pk" primaryKeyIndex="true" unique="false" >
     </index>
    </folder>
   </table>
   <relationships>
+   <relationship id="REL25" populated="true" UUID="b43e6127-094c-4889-bddd-505d92543e4c" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="false" name="societe_de_production_oeuvre_fk" physicalName="societe_de_production_oeuvre_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP26" populated="true" UUID="cb48b489-2d08-4306-9dc8-ec6a30c3e29a" fk-column-ref="COL19" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
+   </relationship>
   </relationships>
  </target-database>
  <ddl-generator type="ca.sqlpower.architect.ddl.GenericDDLGenerator" allow-connection="true"> </ddl-generator>
@@ -116,8 +122,9 @@
   <table-pane table-ref="TAB1" x="73" y="259" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB9" x="706" y="212" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
   <table-pane table-ref="TAB13" x="700" y="347" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB17" x="477" y="328" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB20" x="466" y="430" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB17" x="429" y="331" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB21" x="466" y="430" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL25" pkConnection="0.2857142857142857" fkConnection="0.7832512315270936" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
