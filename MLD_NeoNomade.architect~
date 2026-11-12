@@ -80,63 +80,69 @@
     <column id="COL19" populated="true" UUID="4c5525f8-0489-4967-b828-ab9341d13a86" autoIncrement="false" autoIncrementSequenceName="oeuvre_titre_seq" defaultValue="" name="titre" nullable="0" physicalName="titre" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
+    <column id="COL20" populated="true" UUID="de6cf0a7-39e3-42aa-a4ee-a1f88215095c" autoIncrement="false" autoIncrementSequenceName="oeuvre_type_de_tournage_seq" defaultValue="" name="type_de_tournage" nullable="1" physicalName="type_de_tournage" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL21" populated="true" UUID="80c3ef27-ddd7-4c2a-9050-3dd7807e0e13" autoIncrement="false" autoIncrementSequenceName="oeuvre_saison_seq" defaultValue="" name="saison" nullable="1" physicalName="saison" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
     </folder>
     <folder id="FOLTAB173" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
     <folder id="FOLTAB172" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB174" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX20" populated="true" UUID="13f385b1-f22e-40e3-98ca-84b210c6047a" clustered="false" name="oeuvre_pk" physicalName="oeuvre_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC21" populated="true" UUID="e348e427-5c5a-4554-aeed-8dad4c76876f" ascendingOrDescending="UNSPECIFIED" column-ref="COL18" name="societe_prod" physicalName="societe_prod" />
-     <index-column id="IDC22" populated="true" UUID="1c4055df-c3b3-4f8e-b1aa-4f37f44e06d5" ascendingOrDescending="UNSPECIFIED" column-ref="COL19" name="titre" physicalName="titre" />
+    <index id="IDX22" populated="true" UUID="13f385b1-f22e-40e3-98ca-84b210c6047a" clustered="false" name="oeuvre_pk" physicalName="oeuvre_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC23" populated="true" UUID="e348e427-5c5a-4554-aeed-8dad4c76876f" ascendingOrDescending="UNSPECIFIED" column-ref="COL18" name="societe_prod" physicalName="societe_prod" />
+     <index-column id="IDC24" populated="true" UUID="1c4055df-c3b3-4f8e-b1aa-4f37f44e06d5" ascendingOrDescending="UNSPECIFIED" column-ref="COL19" name="titre" physicalName="titre" />
     </index>
    </folder>
   </table>
-  <table id="TAB23" populated="true" UUID="164ba752-9a9d-474b-91d1-237532641809" name="tournage" objectType="TABLE" physicalName="tournage" >
+  <table id="TAB25" populated="true" UUID="164ba752-9a9d-474b-91d1-237532641809" name="periode_de_tournage" objectType="TABLE" physicalName="periode_de_tournage" >
    <remarks></remarks>
-   <folder id="FOLTAB231" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL24" populated="true" UUID="5019f426-8231-4e61-8c70-72ca5b3d1b8d" autoIncrement="false" autoIncrementSequenceName="societe_de_production_societe_prod_seq" defaultValue="" name="societe_prod" nullable="0" physicalName="societe_prod" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+   <folder id="FOLTAB251" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL26" populated="true" UUID="0d724d0b-1e46-45e7-960b-5ad3f7afb113" autoIncrement="false" autoIncrementSequenceName="periode_de_tournage_date_de_debut_seq" defaultValue="" name="date_de_debut" nullable="0" physicalName="date_de_debut" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks></remarks>
     </column>
-    <column id="COL25" populated="true" UUID="e57ff8e6-f8e6-476c-91ad-83378d54a445" autoIncrement="false" autoIncrementSequenceName="oeuvre_titre_seq" defaultValue="" name="titre" nullable="0" physicalName="titre" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL27" populated="true" UUID="ebc7a208-f790-4fe6-a0cd-61912a9c7f1b" autoIncrement="false" autoIncrementSequenceName="periode_de_tournage_date_de_fin_seq" defaultValue="" name="date_de_fin" nullable="0" physicalName="date_de_fin" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks></remarks>
     </column>
-    <column id="COL26" populated="true" UUID="bb2b30dd-cd2e-4209-9ff7-04465e56655e" autoIncrement="false" autoIncrementSequenceName="lieu_localisation_de_la_scene_seq" defaultValue="" name="localisation_de_la_scene" nullable="0" physicalName="localisation_de_la_scene" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL28" populated="true" UUID="04790053-8d19-4475-8148-82c01341f77d" autoIncrement="false" autoIncrementSequenceName="societe_de_production_societe_prod_seq" defaultValue="" name="societe_prod" nullable="0" physicalName="societe_prod" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL27" populated="true" UUID="a27974b9-838f-49ab-8d92-0a5eeb84df78" autoIncrement="false" autoIncrementSequenceName="lieu_code_postal_seq" defaultValue="" name="code_postal" nullable="0" physicalName="code_postal" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
-     <remarks></remarks>
-    </column>
-    <column id="COL28" populated="true" UUID="0d724d0b-1e46-45e7-960b-5ad3f7afb113" autoIncrement="false" autoIncrementSequenceName="tournage_date_de_debut_seq" defaultValue="" name="date_de_debut" nullable="1" physicalName="date_de_debut" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
-     <remarks></remarks>
-    </column>
-    <column id="COL29" populated="true" UUID="ebc7a208-f790-4fe6-a0cd-61912a9c7f1b" autoIncrement="false" autoIncrementSequenceName="tournage_date_de_fin_seq" defaultValue="" name="date_de_fin" nullable="1" physicalName="date_de_fin" precision="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+    <column id="COL29" populated="true" UUID="6b271f23-a7e8-4c76-8774-7b6b1b12f6a2" autoIncrement="false" autoIncrementSequenceName="oeuvre_titre_seq" defaultValue="" name="titre" nullable="0" physicalName="titre" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
-    <folder id="FOLTAB233" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    <folder id="FOLTAB253" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
     </folder>
-    <folder id="FOLTAB232" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    <folder id="FOLTAB252" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
-    <folder id="FOLTAB234" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX30" populated="true" UUID="9ff92888-5f06-45a2-ad04-11c0a5d48451" clustered="false" name="tournage_pk" physicalName="oeuvre_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC31" populated="true" UUID="7db77157-a120-4416-a382-af7fea239a07" ascendingOrDescending="UNSPECIFIED" column-ref="COL24" name="societe_prod" physicalName="societe_prod" />
-     <index-column id="IDC32" populated="true" UUID="5307ccdf-bc7f-42b4-9d44-749a136f2c4f" ascendingOrDescending="UNSPECIFIED" column-ref="COL25" name="titre" physicalName="titre" />
-     <index-column id="IDC33" populated="true" UUID="e7e4ad4e-ec05-4807-8bda-5042094daeac" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="localisation_de_la_scene" physicalName="localisation_de_la_scene" />
-     <index-column id="IDC34" populated="true" UUID="821d8830-87c3-4407-b4be-27e89d5d185a" ascendingOrDescending="UNSPECIFIED" column-ref="COL27" name="code_postal" physicalName="code_postal" />
+    <folder id="FOLTAB254" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX30" populated="true" UUID="9ff92888-5f06-45a2-ad04-11c0a5d48451" clustered="false" name="periode_de_tournage_pk" physicalName="oeuvre_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC31" populated="true" UUID="7f87b9a3-0573-4663-90bd-2228fe1587bc" ascendingOrDescending="UNSPECIFIED" column-ref="COL26" name="date_de_debut" physicalName="date_de_debut" />
+     <index-column id="IDC32" populated="true" UUID="eda23adc-90ea-43ff-9fb6-2486fd8e5439" ascendingOrDescending="UNSPECIFIED" column-ref="COL27" name="date_de_fin" physicalName="date_de_fin" />
+     <index-column id="IDC33" populated="true" UUID="50955d41-23c9-40c6-883c-57fbb3fe23d9" ascendingOrDescending="UNSPECIFIED" column-ref="COL28" name="societe_prod" physicalName="societe_prod" />
+     <index-column id="IDC34" populated="true" UUID="d6a5abeb-da97-4626-8f13-e4baf86b240d" ascendingOrDescending="UNSPECIFIED" column-ref="COL29" name="titre" physicalName="titre" />
     </index>
    </folder>
   </table>
-  <table id="TAB35" populated="true" UUID="802c62c1-b80e-44e1-a07a-4b361ac0ecc7" name="assoc_oeuvre_real" objectType="TABLE" physicalName="assoc_oeuvre_real" >
+  <table id="TAB35" populated="true" UUID="510727ac-1f9f-4e68-8431-99e4ad9b5485" name="assoc_periode_real" objectType="TABLE" physicalName="assoc_periode_real_" >
    <remarks></remarks>
    <folder id="FOLTAB351" populated="true" name="Columns" physicalName="Columns" type="1">
-    <column id="COL36" populated="true" UUID="4e403114-9efd-4bde-80a3-fb7bd0c1b24d" autoIncrement="false" autoIncrementSequenceName="realisateur_ice_real_seq" defaultValue="" name="real" nullable="0" physicalName="real" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL36" populated="true" UUID="8a476c24-44f5-4d55-8b65-0de752c4f921" autoIncrement="false" autoIncrementSequenceName="realisateur_ice_nom_seq" defaultValue="" name="nom" nullable="0" physicalName="nom" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
-    <column id="COL37" populated="true" UUID="3f10f589-cfd2-48d1-9829-f65bc404401b" autoIncrement="false" autoIncrementSequenceName="societe_de_production_societe_prod_seq" defaultValue="" name="societe_prod" nullable="0" physicalName="societe_prod" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL37" populated="true" UUID="c22ac9bd-eca7-40fb-b3a4-fdc6fdd601cc" autoIncrement="false" autoIncrementSequenceName="periode_tournage_date_de_debut_seq" defaultValue="" name="date_de_debut" nullable="0" physicalName="date_de_debut" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
      <remarks></remarks>
     </column>
-    <column id="COL38" populated="true" UUID="876ad3c1-5317-4fbb-a014-e57baa83122c" autoIncrement="false" autoIncrementSequenceName="oeuvre_titre_oeuvre_seq" defaultValue="" name="titre_oeuvre" nullable="0" physicalName="titre_oeuvre" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+    <column id="COL38" populated="true" UUID="ec0bc572-0eb8-49e7-b998-e0f29427a178" autoIncrement="false" autoIncrementSequenceName="periode_tournage_date_de_fin_seq" defaultValue="" name="date_de_fin" nullable="0" physicalName="date_de_fin" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL39" populated="true" UUID="23e5e065-f2cb-4e5a-a771-2c597d2cf85b" autoIncrement="false" autoIncrementSequenceName="societe_de_production_societe_prod_seq" defaultValue="" name="societe_prod" nullable="0" physicalName="societe_prod" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL40" populated="true" UUID="2e0f1dcb-0d0e-4f0a-93c2-7194af5bb647" autoIncrement="false" autoIncrementSequenceName="oeuvre_titre_seq" defaultValue="" name="titre" nullable="0" physicalName="titre" precision="0" primaryKeySeq="4" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
      <remarks></remarks>
     </column>
     </folder>
@@ -145,31 +151,78 @@
     <folder id="FOLTAB352" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
     </folder>
     <folder id="FOLTAB354" populated="true" name="Indices" physicalName="Indices" type="4">
-    <index id="IDX39" populated="true" UUID="744e6149-1858-40f8-91d1-3fe5d1d978b4" clustered="false" name="assoc_oeuvre_real_pk" physicalName="assoc_oeuvre_real_pk" primaryKeyIndex="true" unique="false" >
-     <index-column id="IDC40" populated="true" UUID="a27360d1-f037-40f2-8b36-d001394e80c8" ascendingOrDescending="UNSPECIFIED" column-ref="COL36" name="real" physicalName="real" />
-     <index-column id="IDC41" populated="true" UUID="389176d0-b62a-461e-9827-21da2e0e198d" ascendingOrDescending="UNSPECIFIED" column-ref="COL37" name="societe_prod" physicalName="societe_prod" />
-     <index-column id="IDC42" populated="true" UUID="af2ec1b7-b763-4b02-8702-d98f66fec0dd" ascendingOrDescending="UNSPECIFIED" column-ref="COL38" name="titre_oeuvre" physicalName="titre_oeuvre" />
+    <index id="IDX41" populated="true" UUID="783f209c-2618-4588-aabb-271b41bd2959" clustered="false" name="assoc_periode_real_pk" physicalName="assoc_oeuvre_real_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC42" populated="true" UUID="68b67b48-28cb-406a-9f53-0c686ccdb98f" ascendingOrDescending="UNSPECIFIED" column-ref="COL36" name="nom" physicalName="nom" />
+     <index-column id="IDC43" populated="true" UUID="e9d4f9ab-4c81-4c0a-bce8-3856dd2573e3" ascendingOrDescending="UNSPECIFIED" column-ref="COL37" name="date_de_debut" physicalName="date_de_debut" />
+     <index-column id="IDC44" populated="true" UUID="3b7b8bb1-7aa7-4ee9-990a-3ee67b11b5c0" ascendingOrDescending="UNSPECIFIED" column-ref="COL38" name="date_de_fin" physicalName="date_de_fin" />
+     <index-column id="IDC45" populated="true" UUID="c80abd3e-9a16-4284-8acc-c9600f838f33" ascendingOrDescending="UNSPECIFIED" column-ref="COL39" name="societe_prod" physicalName="societe_prod" />
+     <index-column id="IDC46" populated="true" UUID="1fc48905-fd16-4d45-8d9b-a23a58ae00b0" ascendingOrDescending="UNSPECIFIED" column-ref="COL40" name="titre" physicalName="titre" />
+    </index>
+   </folder>
+  </table>
+  <table id="TAB47" populated="true" UUID="8e391224-11b4-41b9-b90e-00e143271ed2" name="assoc_periode_lieu" objectType="TABLE" physicalName="assoc_periode_lieu" >
+   <remarks></remarks>
+   <folder id="FOLTAB471" populated="true" name="Columns" physicalName="Columns" type="1">
+    <column id="COL48" populated="true" UUID="be424625-f93f-474c-a38b-42cce258264b" autoIncrement="false" autoIncrementSequenceName="periode_de_tournage_date_de_debut_seq" defaultValue="" name="date_de_debut" nullable="0" physicalName="date_de_debut" precision="0" primaryKeySeq="0" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL49" populated="true" UUID="a0da931e-9874-47a7-808e-49f41edfb63c" autoIncrement="false" autoIncrementSequenceName="periode_de_tournage_date_de_fin_seq" defaultValue="" name="date_de_fin" nullable="0" physicalName="date_de_fin" precision="0" primaryKeySeq="1" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="91" userDefinedTypeUUID="ee349be3-6af2-46e1-b305-975f5354b009" >
+     <remarks></remarks>
+    </column>
+    <column id="COL50" populated="true" UUID="bcea1545-cd50-46d1-a412-f5b9c75288a7" autoIncrement="false" autoIncrementSequenceName="societe_de_production_societe_prod_seq" defaultValue="" name="societe_prod" nullable="0" physicalName="societe_prod" precision="0" primaryKeySeq="2" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL51" populated="true" UUID="c3e424a8-4687-4fd0-833c-b58be15c3407" autoIncrement="false" autoIncrementSequenceName="oeuvre_titre_seq" defaultValue="" name="titre" nullable="0" physicalName="titre" precision="0" primaryKeySeq="3" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL52" populated="true" UUID="63353a5f-3a00-4292-b549-342661481010" autoIncrement="false" autoIncrementSequenceName="lieu_localisation_de_la_scene_seq" defaultValue="" name="localisation_de_la_scene" nullable="0" physicalName="localisation_de_la_scene" precision="0" primaryKeySeq="4" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="12" userDefinedTypeUUID="831ac2d4-0e65-47ec-a0b7-62b7f6b8760a" >
+     <remarks></remarks>
+    </column>
+    <column id="COL53" populated="true" UUID="b9ef2626-a28c-4c43-87a4-9f8af5e3226d" autoIncrement="false" autoIncrementSequenceName="lieu_code_postal_seq" defaultValue="" name="code_postal" nullable="0" physicalName="code_postal" precision="0" primaryKeySeq="5" referenceCount="1" scale="0" sourceDataTypeName="UserDefinedSQLType" type="4" userDefinedTypeUUID="63b011c7-c81f-4c75-8271-632b3c87f727" >
+     <remarks></remarks>
+    </column>
+    </folder>
+    <folder id="FOLTAB473" populated="true" name="Exported Keys" physicalName="Exported Keys" type="3">
+    </folder>
+    <folder id="FOLTAB472" populated="true" name="Imported Keys" physicalName="Imported Keys" type="2">
+    </folder>
+    <folder id="FOLTAB474" populated="true" name="Indices" physicalName="Indices" type="4">
+    <index id="IDX54" populated="true" UUID="e24af939-df4b-4aac-9043-c4336352f61a" clustered="false" name="assoc_periode_lieu_pk" physicalName="assoc_periode_lieu_pk" primaryKeyIndex="true" unique="false" >
+     <index-column id="IDC55" populated="true" UUID="cfcaba4d-3a9b-4233-a371-0a73b359ba15" ascendingOrDescending="UNSPECIFIED" column-ref="COL48" name="date_de_debut" physicalName="date_de_debut" />
+     <index-column id="IDC56" populated="true" UUID="36274499-e145-48eb-8b66-be9df6b5a5cb" ascendingOrDescending="UNSPECIFIED" column-ref="COL49" name="date_de_fin" physicalName="date_de_fin" />
+     <index-column id="IDC57" populated="true" UUID="09eaab30-e28c-4c08-b221-276ca8d06a4a" ascendingOrDescending="UNSPECIFIED" column-ref="COL50" name="societe_prod" physicalName="societe_prod" />
+     <index-column id="IDC58" populated="true" UUID="a2521814-8b31-4854-bce1-4957475b2e5e" ascendingOrDescending="UNSPECIFIED" column-ref="COL51" name="titre" physicalName="titre" />
+     <index-column id="IDC59" populated="true" UUID="469aadcc-94ae-4d17-a212-4c302a066c06" ascendingOrDescending="UNSPECIFIED" column-ref="COL52" name="localisation_de_la_scene" physicalName="localisation_de_la_scene" />
+     <index-column id="IDC60" populated="true" UUID="457cb0eb-61d4-4bdd-a073-c70df7af93c8" ascendingOrDescending="UNSPECIFIED" column-ref="COL53" name="code_postal" physicalName="code_postal" />
     </index>
    </folder>
   </table>
   <relationships>
-   <relationship id="REL43" populated="true" UUID="8bd0efad-04b6-464d-8526-d40f6c725d1e" deferrability="7" deleteRule="3" fk-table-ref="TAB23" fkCardinality="7" identifying="true" name="lieu_tournage_fk" physicalName="lieu_tournage_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP44" populated="true" UUID="f3bdda2a-e0ea-4f1d-ae20-1114484e4b83" fk-column-ref="COL26" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
-    <column-mapping id="CMP45" populated="true" UUID="e9aaf664-a81c-4ccf-8cfc-d98d6c92ba05" fk-column-ref="COL27" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
+   <relationship id="REL61" populated="true" UUID="823cf88b-acfe-492d-9bc3-3dc6370b5137" deferrability="7" deleteRule="3" fk-table-ref="TAB47" fkCardinality="7" identifying="true" name="lieu_assoc_periode_lieu_fk" physicalName="lieu_assoc_periode_lieu_fk" pk-table-ref="TAB1" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP62" populated="true" UUID="b0351b28-f69e-4eef-82a1-976aa091ea1b" fk-column-ref="COL52" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL2" />
+    <column-mapping id="CMP63" populated="true" UUID="40962042-9c2e-45b9-a01b-d01e0246d822" fk-column-ref="COL53" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL3" />
    </relationship>
-   <relationship id="REL46" populated="true" UUID="b43e6127-094c-4889-bddd-505d92543e4c" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="false" name="societe_de_production_oeuvre_fk" physicalName="societe_de_production_oeuvre_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP47" populated="true" UUID="cb48b489-2d08-4306-9dc8-ec6a30c3e29a" fk-column-ref="COL18" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
+   <relationship id="REL64" populated="true" UUID="b43e6127-094c-4889-bddd-505d92543e4c" deferrability="7" deleteRule="3" fk-table-ref="TAB17" fkCardinality="7" identifying="false" name="societe_de_production_oeuvre_fk" physicalName="societe_de_production_oeuvre_fk" pk-table-ref="TAB9" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP65" populated="true" UUID="cb48b489-2d08-4306-9dc8-ec6a30c3e29a" fk-column-ref="COL18" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL10" />
    </relationship>
-   <relationship id="REL48" populated="true" UUID="6120c333-7a1b-4acc-a5f8-45dd34f53ce5" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="realisateur_ice_assoc_oeuvre_real_fk" physicalName="realisateur_ice_assoc_oeuvre_real_fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP49" populated="true" UUID="5c9cf528-3552-4d62-a968-e7189c9d5637" fk-column-ref="COL36" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
+   <relationship id="REL66" populated="true" UUID="73a996aa-9894-4f1c-a07a-494a729e1e01" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="realisateur_ice_assoc_periode_real__fk" physicalName="realisateur_ice_assoc_periode_real__fk" pk-table-ref="TAB13" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP67" populated="true" UUID="ec86237a-f4dd-4b9c-ac2f-1618018b244b" fk-column-ref="COL36" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL14" />
    </relationship>
-   <relationship id="REL50" populated="true" UUID="48aacee7-4f3a-452a-b180-bb32e1ea7f09" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="oeuvre_assoc_oeuvre_real_fk" physicalName="oeuvre_assoc_oeuvre_real_fk" pk-table-ref="TAB17" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP51" populated="true" UUID="e16e276e-8824-4f81-ba5c-a307b6d8b7eb" fk-column-ref="COL37" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL18" />
-    <column-mapping id="CMP52" populated="true" UUID="f7fedf95-c304-4c39-bd51-1d0e62674df7" fk-column-ref="COL38" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   <relationship id="REL68" populated="true" UUID="03945fe9-f24a-48f1-aeb7-cc52a13921f1" deferrability="7" deleteRule="3" fk-table-ref="TAB25" fkCardinality="7" identifying="false" name="oeuvre_periode_de_tournage_fk" physicalName="oeuvre_periode_de_tournage_fk" pk-table-ref="TAB17" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP69" populated="true" UUID="42155bc7-fee7-440a-88b7-8a7e85d42e06" fk-column-ref="COL28" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL18" />
+    <column-mapping id="CMP70" populated="true" UUID="029ed651-a406-46f2-a957-7d1471fea356" fk-column-ref="COL29" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
    </relationship>
-   <relationship id="REL53" populated="true" UUID="14082a4e-452f-45b7-a9f5-cf3b01392385" deferrability="7" deleteRule="3" fk-table-ref="TAB23" fkCardinality="7" identifying="true" name="oeuvre_tournage_fk" physicalName="oeuvre_tournage_fk" pk-table-ref="TAB17" pkCardinality="2" updateRule="3" >
-    <column-mapping id="CMP54" populated="true" UUID="ceddcd6a-f56b-4673-9813-1d47b6debcf9" fk-column-ref="COL24" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL18" />
-    <column-mapping id="CMP55" populated="true" UUID="c0256780-d117-4500-aca6-c7552521a402" fk-column-ref="COL25" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL19" />
+   <relationship id="REL71" populated="true" UUID="2331e0da-4117-4b93-b7c4-df88eb030902" deferrability="7" deleteRule="3" fk-table-ref="TAB35" fkCardinality="7" identifying="true" name="periode_tournage_assoc_periode_real__fk" physicalName="periode_tournage_assoc_periode_real__fk" pk-table-ref="TAB25" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP72" populated="true" UUID="6fe8a792-3770-46de-9a49-d7e4774455e4" fk-column-ref="COL37" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL26" />
+    <column-mapping id="CMP73" populated="true" UUID="79750b00-16ef-430d-863d-b617bde73177" fk-column-ref="COL38" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
+    <column-mapping id="CMP74" populated="true" UUID="fc17e6d8-2039-471a-88bd-0989f5619789" fk-column-ref="COL39" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL28" />
+    <column-mapping id="CMP75" populated="true" UUID="0541206a-0dee-4297-bd3a-77dcddd6048f" fk-column-ref="COL40" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL29" />
+   </relationship>
+   <relationship id="REL76" populated="true" UUID="2abe6e38-7994-4685-aabb-ea1686b7227a" deferrability="7" deleteRule="3" fk-table-ref="TAB47" fkCardinality="7" identifying="true" name="periode_de_tournage_assoc_periode_lieu_fk" physicalName="periode_de_tournage_assoc_periode_lieu_fk" pk-table-ref="TAB25" pkCardinality="2" updateRule="3" >
+    <column-mapping id="CMP77" populated="true" UUID="5050d649-0739-4458-9681-faf22dced5de" fk-column-ref="COL48" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL26" />
+    <column-mapping id="CMP78" populated="true" UUID="d4a907ef-6492-4493-9b31-5463ec8f0ba1" fk-column-ref="COL49" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL27" />
+    <column-mapping id="CMP79" populated="true" UUID="385f8df2-01a6-45f8-9f88-b09bd92576f4" fk-column-ref="COL50" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL28" />
+    <column-mapping id="CMP80" populated="true" UUID="7de3d5df-e23c-4751-8018-0b06e633dcdf" fk-column-ref="COL51" name="Column Mapping" physicalName="Column Mapping" pk-column-ref="COL29" />
    </relationship>
   </relationships>
  </target-database>
@@ -177,17 +230,19 @@
  <liquibase-settings useSeparateChangeSets="false" generateId="false" idStart="1"/>
  <create-kettle-job-settings filePath="" jobName="" schemaName="" kettleJoinType="0" savingToFile="true" />
  <play-pen zoom="1.0" viewportX="0" viewportY="0" relationship-style="rectilinear" names-displayLogicalNames="true" showPrimaryTag="true" showForeignTag="true" showAlternateTag="true" columnVisibility="ALL" relationshipLabelVisibility="true">
-  <table-pane table-ref="TAB1" x="28" y="220" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB9" x="769" y="196" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB13" x="796" y="609" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB17" x="566" y="331" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB23" x="232" y="453" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-pane table-ref="TAB35" x="677" y="472" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
-  <table-link relationship-ref="REL46" pkConnection="0.2857142857142857" fkConnection="0.7832512315270936" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL50" pkConnection="0.6772908366533864" fkConnection="0.2972972972972973" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL48" pkConnection="0.23645320197044334" fkConnection="0.7476190476190476" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
-  <table-link relationship-ref="REL53" pkConnection="0.23255813953488372" fkConnection="0.8992248062015504" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
-  <table-link relationship-ref="REL43" pkConnection="0.6238244514106583" fkConnection="0.3374233128834356" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-pane table-ref="TAB1" x="62" y="279" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB9" x="584" y="246" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB13" x="849" y="592" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB17" x="515" y="356" bgColor="0xeeeeee" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB25" x="164" y="592" bgColor="0xf0f0f0" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB35" x="541" y="577" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-pane table-ref="TAB47" x="54" y="408" bgColor="0xb9bbf6" fgColor="0x000000" rounded="false" dashed="false"/>
+  <table-link relationship-ref="REL64" pkConnection="0.2857142857142857" fkConnection="0.7832512315270936" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL66" pkConnection="0.7674418604651163" fkConnection="0.11764705882352941" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="18"/>
+  <table-link relationship-ref="REL71" pkConnection="0.6902654867256637" fkConnection="0.26262626262626265" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="33"/>
+  <table-link relationship-ref="REL76" pkConnection="0.5231481481481481" fkConnection="0.4722222222222222" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="72"/>
+  <table-link relationship-ref="REL61" pkConnection="0.5225563909774437" fkConnection="0.46691176470588236" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
+  <table-link relationship-ref="REL68" pkConnection="0.2037037037037037" fkConnection="0.8" rLineColor="0x000000" pkLabelText="" fkLabelText="" orientation="132"/>
  </play-pen>
  <critic-manager>
   <critic-grouping platformType="Generic" enabled="true">
